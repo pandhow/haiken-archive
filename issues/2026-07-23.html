@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海垦日报 · 2026-07-23</title>
+<style>
+  :root{
+    --bg:#0a0e1a; --bg2:#0e1426; --card:#121a30; --card2:#16203a;
+    --line:#22304f; --txt:#e7eefb; --sub:#9fb0cc; --dim:#6b7c9c;
+    --haiblue:#2b8fd4; --haiblue2:#0f5e9c;
+    --farmgreen:#2eaf6a; --farmgreen2:#157a47;
+    --rubber:#c08a4a; --rubber2:#8a5a2b;
+    --rsv:#9b6cf6; --rsv2:#6d3fd1;
+    --accent:#19d3c5;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif;
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(43,143,212,.10), transparent 60%),
+      radial-gradient(900px 500px at 0% 110%, rgba(155,108,246,.08), transparent 55%),
+      linear-gradient(180deg,var(--bg),var(--bg2));
+    color:var(--txt);line-height:1.65;padding:0 0 60px}
+  .wrap{max-width:980px;margin:0 auto;padding:0 22px}
+  /* Header */
+  header{padding:34px 22px 22px;text-align:center;position:relative;border-bottom:1px solid var(--line)}
+  .logo{display:inline-flex;align-items:center;gap:12px;font-size:15px;color:var(--accent);letter-spacing:3px}
+  h1{font-size:40px;font-weight:800;margin:8px 0 4px;
+    background:linear-gradient(90deg,#5ec8ff,#19d3c5 55%,#9b6cf6);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .meta{color:var(--sub);font-size:14px;margin-top:6px}
+  .meta b{color:var(--txt)}
+  .pill{display:inline-block;background:rgba(25,211,197,.12);border:1px solid rgba(25,211,197,.35);
+    color:var(--accent);border-radius:999px;padding:3px 12px;font-size:12px;margin:0 4px}
+  /* Section boxes */
+  .sec{margin-top:30px;background:linear-gradient(180deg,var(--card),var(--card2));
+    border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  .sec-h{display:flex;align-items:center;gap:14px;padding:16px 20px;border-bottom:1px solid var(--line)}
+  .bar{width:7px;height:30px;border-radius:6px}
+  .sec-h .no{font-size:13px;color:var(--dim);font-weight:700}
+  .sec-h h2{font-size:20px;font-weight:800;flex:1}
+  .sec-h .tag{font-size:12px;color:var(--dim)}
+  .sec-b{padding:18px 20px}
+  /* item */
+  .item{padding:14px 0;border-bottom:1px dashed rgba(34,48,79,.7)}
+  .item:last-child{border-bottom:none}
+  .item .t{font-size:16px;font-weight:700;color:#fff;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+  .item .src{font-size:12px;color:var(--dim);background:rgba(255,255,255,.04);border:1px solid var(--line);
+    border-radius:6px;padding:1px 8px}
+  .item .date{font-size:12px;color:var(--accent)}
+  .item p{color:var(--sub);font-size:14px;margin-top:6px}
+  .item .k{color:var(--txt)}
+  /* biz block */
+  .biz{margin-top:10px;background:linear-gradient(90deg,rgba(25,211,197,.10),rgba(25,211,197,.02));
+    border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:10px 14px;font-size:13.5px;color:#bff3ee}
+  .biz b{color:#eafffd}
+  /* highlight core */
+  .core{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+  .core .c{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);
+    border-radius:14px;padding:14px 16px;position:relative}
+  .core .c .n{position:absolute;top:10px;right:14px;font-size:34px;font-weight:800;color:rgba(255,255,255,.06)}
+  .core .c h3{font-size:15px;color:#fff;font-weight:700;padding-right:30px}
+  .core .c p{font-size:13px;color:var(--sub);margin-top:5px}
+  /* matrix */
+  .matrix{margin-top:14px;display:grid;grid-template-columns:1fr;gap:8px}
+  .mrow{display:grid;grid-template-columns:200px 1fr 90px;align-items:center;gap:10px;
+    background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 14px}
+  .mrow .nm{font-weight:700;font-size:14px}
+  .mrow .ds{font-size:13px;color:var(--sub)}
+  .lv{font-weight:800;text-align:center;border-radius:8px;font-size:13px;padding:4px 0}
+  .lv.hi{background:rgba(231,76,60,.16);color:#ff8a7a;border:1px solid rgba(231,76,60,.4)}
+  .lv.mid{background:rgba(241,196,15,.14);color:#ffd766;border:1px solid rgba(241,196,15,.35)}
+  .lv.no{background:rgba(120,140,170,.12);color:var(--dim);border:1px solid var(--line)}
+  /* price table */
+  table{width:100%;border-collapse:collapse;margin-top:8px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+  th{background:rgba(192,138,74,.14);color:#e9cfa6;font-weight:700}
+  td .up{color:#ff7a6b;font-weight:700}
+  td .dn{color:#5fe08a;font-weight:700}
+  .note{font-size:12px;color:var(--dim);margin-top:8px}
+  /* next steps */
+  .next{margin-top:30px;background:linear-gradient(135deg,rgba(25,211,197,.08),rgba(43,143,212,.06));
+    border:1px solid rgba(25,211,197,.3);border-radius:16px;padding:20px 22px}
+  .next h2{font-size:19px;color:#eafffd;margin-bottom:10px}
+  .next ol{margin-left:20px;color:var(--sub);font-size:14px}
+  .next ol li{margin:8px 0}
+  .next ol li b{color:var(--txt)}
+  footer{text-align:center;color:var(--dim);font-size:12px;margin-top:34px;line-height:1.8}
+  .disclaimer{margin-top:10px;font-size:11.5px;color:#5b6b88}
+  @media(max-width:680px){.core{grid-template-columns:1fr}.mrow{grid-template-columns:1fr;gap:4px}.mrow .lv{justify-self:start}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">🌴 HAINAN · 卫星主营业务调研 · 遥感 × 农业</div>
+  <h1>海垦日报</h1>
+  <div class="meta"><b>2026年7月23日</b> · 星期四 &nbsp;|&nbsp; 监测主线：海南橡胶 / 海垦集团 / 全国农垦遥感 / 天然橡胶 / 全球遥感×农业</div>
+  <div style="margin-top:10px">
+    <span class="pill">数据源：巨潮资讯·东财·同花顺·上期所·农业农村部·泰伯网·ANRPC·NASA/ESA</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- 核心看点 -->
+  <div style="margin-top:26px">
+    <div style="font-size:13px;color:var(--accent);letter-spacing:2px;font-weight:700;margin-bottom:4px">▍今日核心看点</div>
+    <div class="core">
+      <div class="c"><span class="n">01</span><h3>海南橡胶半年报预告：亏损收窄</h3>
+        <p>归母净利预计 -0.9~-1.35 亿元（去年同期 -1.76 亿），扣非亏损仍大；主因胶价周期底部、高温干旱限产、EUDR 合规溢价下滑。7/22 股价 4.74 元 +1.28%。</p></div>
+      <div class="c"><span class="n">02</span><h3>海垦集团半年会部署下半年冲刺</h3>
+        <p>7/16 经营分析会：利润同比增、营收环比增；聚焦天然橡胶、南繁种业，推进 RCEP 农副中心、"海南鲜品"品牌出海。</p></div>
+      <div class="c"><span class="n">03</span><h3>农业遥感进入"大模型+业务化"</h3>
+        <p>山东"舜耕·粮安"省域业务化运行（精度 95%）；国家数据局将"卫星遥感赋能精准农业"列为公共数据典型案例。</p></div>
+      <div class="c"><span class="n">04</span><h3>胶价结构性短缺延续</h3>
+        <p>ANRPC 2026 缺口约 40 万吨；沪胶 RU2609 于 16800-17100 区间震荡，原料高价+厄尔尼诺减产预期构成"铁底"。</p></div>
+      <div class="c"><span class="n">05</span><h3>全球农业遥感加速扩张</h3>
+        <p>NASA×ESA 定制制图、肯尼亚 CroME、ESA AgriCEM 高光谱（2028 发射）——与明华文昌遥感/火箭发射布局同频。</p></div>
+    </div>
+  </div>
+
+  <!-- 速览矩阵 -->
+  <div style="margin-top:26px">
+    <div style="font-size:13px;color:var(--accent);letter-spacing:2px;font-weight:700;margin-bottom:4px">▍四板块速览矩阵</div>
+    <div class="matrix">
+      <div class="mrow"><span class="nm" style="color:var(--haiblue)">① 海南橡胶 & 海垦集团</span>
+        <span class="ds">业绩预告+股价异动+集团半年会路线图</span><span class="lv hi">● 高</span></div>
+      <div class="mrow"><span class="nm" style="color:var(--farmgreen)">② 全国农垦体系（遥感）</span>
+        <span class="ds">农垦改革"六大行动"+北大荒空天地一张图</span><span class="lv hi">● 高</span></div>
+      <div class="mrow"><span class="nm" style="color:var(--rubber)">③ 天然橡胶行业</span>
+        <span class="ds">沪胶/东京RSS3胶价震荡+ANRPC缺口延续</span><span class="lv mid">● 中</span></div>
+      <div class="mrow"><span class="nm" style="color:var(--rsv)">④ 遥感 × 农业（全球）</span>
+        <span class="ds">农业遥感大模型+NASA/ESA/肯尼亚项目</span><span class="lv hi">● 高</span></div>
+    </div>
+  </div>
+
+  <!-- 板块一 -->
+  <div class="sec">
+    <div class="sec-h"><span class="bar" style="background:linear-gradient(var(--haiblue),var(--haiblue2))"></span>
+      <span class="no">板块一</span><h2>海南橡胶 & 海垦集团</h2><span class="tag">公告/业绩/股价 · 经营/项目/人事</span></div>
+    <div class="sec-b">
+
+      <div class="item">
+        <div class="t">海南橡胶(601118)披露 2026 半年度业绩预告，亏损同比收窄<span class="src">证券之星 / 巨潮资讯</span><span class="date">2026-07-15</span></div>
+        <p><span class="k">要点：</span>预计上半年归母净利 <b>-13,500 ~ -9,000 万元</b>（去年同期 -17,604.72 万）；扣非 -38,000 ~ -25,500 万。亏损主因：下游需求走弱、胶价处周期底部、符合 EUDR 产品溢价下滑、主产区高温干旱致原料产出受限及采购成本上升；虽有征地补偿等一次性收益仍难弥补经营性亏损。</p>
+        <div class="biz">🔗 <b>明华衔接：</b>海南橡胶是明华<b>遥感项目目标客户（海南农垦集团）</b>。其上半年受"高温干旱限产+胶价底部"双重挤压，恰恰凸显<b>遥感长势/墒情监测、灾害早预警</b>对稳产降本的价值——可作为方案讲解中"业务痛点"的现成论据。</div>
+      </div>
+
+      <div class="item">
+        <div class="t">海南橡胶 7/22 涨 1.28%，主力连续 3 日净流出<span class="src">新浪证券 / 同花顺</span><span class="date">2026-07-22</span></div>
+        <p><span class="k">要点：</span>收盘 <b>4.74 元</b>（+1.28%），成交 2.49 亿，总市值 202.84 亿；主力净流入 -4,149 万，连续 3 日减仓。Q1 营收 65.39 亿（同比 -20.75%），归母净利 -1.33 亿（同比 -22.31%）。概念含海南国资/土地流转/免税/农业种植/海南自贸区/乡村振兴/军工；拥有胶林防护林 <b>353 万亩</b>、覆盖海南 17 个市县，占全省胶园约 30%。</p>
+      </div>
+
+      <div class="item">
+        <div class="t">海垦集团召开 2026 上半年经营分析会，部署下半年"路线图"<span class="src">海南日报 / 海南农垦报</span><span class="date">2026-07-16 / 07-14</span></div>
+        <p><span class="k">要点：</span>上半年利润同比增、营收环比增，多家二级企业经营性利润增长；7/10 月度例会明确下半年重点——<b>坚定不移推动天然橡胶、南繁种业高质量发展</b>；推进海南 RCEP 国际农副产品交易中心、海南农产品产供销体系建设；"海南鲜品"品牌向"高端走、线上走、海外走"；首批 20 个中心居民点建设、3 万吨乳胶丝产能扩建、南繁硅谷重大科创平台招投标。</p>
+        <div class="biz">🔗 <b>明华衔接：</b>海垦"天然橡胶高质量发展+南繁种业"与明华遥感方案高度契合。集团层面推进<b>产供销体系与品牌出海</b>，对"遥感+农业"全链条（估产、质量溯源、出海品牌背书）有潜在需求；建议围绕"前期需求调研+遥感方案讲解"分工持续跟进涂部长线。</div>
+      </div>
+
+      <div class="item">
+        <div class="t">海垦集团 2026 工作会：2025 营收 646 亿、资产 2692 亿、中国企业 500 强第 384 名<span class="src">海南特区报 / 今日头条</span><span class="date">2026-02-09</span></div>
+        <p><span class="k">要点：</span>2025 年利润总额 22.18 亿、负债率 24%、综合财力贡献 22.34 亿；科技研发经费 3.8 亿。"十五五"主线"八个聚焦、一个坚持"：聚焦天然橡胶和南繁产业、热带特色高效农业、保供稳价、土地资源运营、垦地融合、新兴产业、创新引领、深化改革。</p>
+        <div class="biz">🔗 <b>明华衔接：</b>"聚焦新兴产业发展、向新发展"为明华切入<b>遥感×农业新业态</b>留口子；海垦"土地资源运营"与遥感"一张图"底图能力天然匹配。</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 板块二 -->
+  <div class="sec">
+    <div class="sec-h"><span class="bar" style="background:linear-gradient(var(--farmgreen),var(--farmgreen2))"></span>
+      <span class="no">板块二</span><h2>全国农垦体系（遥感相关）</h2><span class="tag">农垦改革与政策 · 各垦区数字化/遥感应用</span></div>
+    <div class="sec-b">
+
+      <div class="item">
+        <div class="t">农业农村部部署农垦改革"六大行动"，"十五五"农垦领跑现代农业<span class="src">农民日报 / 农垦局</span><span class="date">2026-04-10 / 持续</span></div>
+        <p><span class="k">要点：</span>深化农垦改革发展工作视频会持续部署；农垦改革"六大行动"——深化提升行动、现代农业"三大建设"领航行动、粮油单产提升深化行动、"农垦社会化服务+地方"扩面提质行动、欠发达国有农场振兴行动、农场现代生活条件补短板行动。全国 102 家农垦集团、736 个农场纳入集团管理，68.8% 企业性质农场完成公司制改制。2025 年农垦粮食产量再破 800 亿斤。</p>
+        <div class="biz">🔗 <b>明华衔接：</b>政策强推"智慧农场+人工智能率先应用"，是农业遥感规模化落地的<b>顶层东风</b>。明华可把海南农垦作为"农垦遥感样板间"，复制到其他垦区形成标准化方案。</div>
+      </div>
+
+      <div class="item">
+        <div class="t">北大荒"空天地一张图"：48 颗卫星+3.3 万物联网终端，2 小时处理 1TB 遥感<span class="src">腾讯新闻 / 中国农垦</span><span class="date">2026-03-31</span></div>
+        <p><span class="k">要点：</span>27 万个地块拥有唯一"数字身份"，整合 48 颗卫星、3.3 万余台物联网终端构建"空天地"一体化感知网；主粮作物<b>每 5 天完成一次自动化长势监测</b>，2 小时处理 1TB 遥感影像。北安分公司 545 万亩耕地如数字地图跃屏；牡丹江八五六农场 120 余万亩智慧示范，600+ 智能设备 24h 采集冠层光谱/植被指数/土壤墒情。</p>
+        <div class="biz">🔗 <b>明华衔接：</b>北大荒"一张图"是<b>国内最成熟农业遥感标杆</b>。明华向海南农垦输出方案时可直接对标其架构（地块数字身份+长势监测频次+遥感影像处理时效），缩短客户认知成本。</div>
+      </div>
+
+      <div class="item">
+        <div class="t">友谊农场"卫星遥感+AI"变量施肥：减肥 15%、增产 7%、亩均节本增效 76 元<span class="src">中国农垦杂志 / 今日头条</span><span class="date">2026-03-20</span></div>
+        <p><span class="k">要点：</span>无人机巡田实现穴数、草害等 9 大识别功能，累计推广 4.1 万亩；变量施肥利用<b>卫星遥感与 AI 算法建模</b>生成处方图；万亩示范区劳动强度降 60%、人工减 50%。旱田变量施肥、黑土地地力提升技术入选"2026 黑龙江省农业主推技术"。</p>
+      </div>
+
+      <div class="item">
+        <div class="t">临沧市农垦局 2026 工作要点：年底组建临沧农垦集团，纵深推进垦区集团化<span class="src">云南省农垦局</span><span class="date">2026 年度</span></div>
+        <p><span class="k">要点：</span>开展清资产/清资源/清合同/清人员"四清"，推进农场公司上划市级管理，力争 2026 年底前完成临沧农垦集团组建；构建权利义务清晰的国有土地经营制度，推进规模化经营。</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 板块三 -->
+  <div class="sec">
+    <div class="sec-h"><span class="bar" style="background:linear-gradient(var(--rubber),var(--rubber2))"></span>
+      <span class="no">板块三</span><h2>天然橡胶行业（精简）</h2><span class="tag">胶价走势 · 供需/贸易政策</span></div>
+    <div class="sec-b">
+
+      <table>
+        <tr><th>标的</th><th>最新价 / 参考</th><th>涨跌</th><th>备注</th></tr>
+        <tr><td>沪胶 RU2609（上期所）</td><td>约 16,800–17,100 元/吨</td><td class="dn">区间震荡</td><td>7/17 收 16,805（-1.44%）；原料成本高企、调整空间有限</td></tr>
+        <tr><td>山东 SCRWF 全乳胶</td><td>17,050–17,100 元/吨</td><td class="dn">环比回落</td><td>7/17 现货走弱拖累盘面（天然橡胶网）</td></tr>
+        <tr><td>青岛 20 号泰混</td><td>近 5 年同期最高</td><td class="up">+4.12%</td><td>下方成本托底较强（同花顺 07-22）</td></tr>
+        <tr><td>东京 RSS3（TOCOM）</td><td>参考 ANRPC 4 月均价 2,769 美元/吨</td><td class="up">环比 +8.1%</td><td>⚠ 当日实时收盘未抓取到，以 ANRPC 月均+2026 日胶涨约 3% 为参考</td></tr>
+        <tr><td>ANRPC 2026 全球</td><td>产量 1,533 万 / 消费 1,555 万吨</td><td class="up">缺口 ~40 万</td><td>连续 6 年供不应求；5 月产量 -4.7%、消费 +4.9%</td></tr>
+      </table>
+      <div class="note">库存：国内天然橡胶社会库存 121–124 万吨小幅去化，连续两周微降；青岛保税区同步去库。日胶 JRU 交割库存 6 月连续 6 个月累库至 0.53 万吨。</div>
+
+      <div class="item" style="border-bottom:none;padding-bottom:0">
+        <div class="t">一句话供需要点<span class="src">ANRPC / 同花顺 / 中橡协</span><span class="date">2026-07</span></div>
+        <p><span class="k">供给：</span>厄尔尼诺持续扰动全球产区、主产区高温干旱、胶树老化+叶片脱落病（损失 30–35%），新割季放量但原料高价坚挺。<span class="k">需求：</span>轮胎开工环比下降但全钢偏强，新能源汽车托底；秘鲁、欧亚对华轮胎反倾销压制外需。<span class="k">政策：</span>天然胶暂未纳入非洲建交国零关税清单；<b>欧盟零毁林法案(EUDR)监管范围调整，输送带等橡胶制品移出强制监管</b>，降低出口合规成本。霍尔木兹海峡航运受阻预期持续至 2027，地缘风险溢价仍在。</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 板块四 -->
+  <div class="sec">
+    <div class="sec-h"><span class="bar" style="background:linear-gradient(var(--rsv),var(--rsv2))"></span>
+      <span class="no">板块四</span><h2>遥感 × 农业（全球）</h2><span class="tag">新技术/新应用 · 政策/项目/合作</span></div>
+    <div class="sec-b">
+
+      <div class="item">
+        <div class="t">山东发布"舜耕·粮安"农业遥感大模型，黄淮海首个省域业务化运行<span class="src">大众日报 / 山东省农科院</span><span class="date">2026-06-27~29</span></div>
+        <p><span class="k">要点：</span>6 个垂直模型覆盖耕地资源、土壤肥墒、作物类型、长势动态、病虫灾害、产量预测；效率提升超 100%、精度最高 95%，率先实现<b>大模型支撑的省域农情遥感监测业务化运行</b>。依托空天地一体化融合与数据-模型-产品全链条闭环。</p>
+        <div class="biz">🔗 <b>明华衔接：</b>"农业遥感大模型+业务化"是当前最领先范式。明华面向海南农垦（天然橡胶为主）可借鉴构建<b>"橡胶遥感大模型"</b>：胶园边界提取、长势、病害、估产六大模型，契合海南 353 万亩胶林场景。</div>
+      </div>
+
+      <div class="item">
+        <div class="t">国家数据局将"卫星遥感数据赋能精准农业生产"列为公共数据典型案例<span class="src">国家数据局（推荐：农业农村部）</span><span class="date">2026-01-07</span></div>
+        <p><span class="k">要点：</span>整合国产高分卫星数据与农业数据，在作物监测、土壤墒情、变量施肥、灾害预警深度应用；北大荒示范农场作物分类精度 90%+，变量施肥节本增效；构建全国冬小麦/油菜"一张图"（大宗作物识别率 85%+）；针对 2025 黄淮海"烂秋雨"开展墒情监测，为 9 省市抢收补种决策。</p>
+        <div class="biz">🔗 <b>明华衔接：</b>"央地联动+政企研合作+一张图共享"机制可直接复用于<b>海南农垦遥感数据平台</b>；明华作为技术服务方有切入点。</div>
+      </div>
+
+      <div class="item">
+        <div class="t">风云气象卫星"春耕笔记"：每 6 小时全国农田全覆盖，NDVI 实时更新<span class="src">国家卫星气象中心 / 人民日报</span><span class="date">2026-04-20</span></div>
+        <p><span class="k">要点：</span>覆盖国-省-市-县四级大宗作物分布遥感监测与评估业务体系；风云三号组网每 6 小时获取农田环境信息；耕地 NDVI 数据集分省/市/县逐日及旬尺度输出。我国为全球唯一拥有成套作物发育期自动观测数据的国家。</p>
+      </div>
+
+      <div class="item">
+        <div class="t">全球农业遥感项目密集落地：NASA×ESA、肯尼亚 CroME、ESA AgriCEM<span class="src">NASA Harvest / 肯尼亚航天局 / ESA</span><span class="date">2026</span></div>
+        <p><span class="k">要点：</span>① NASA Harvest 与 ESA WorldCereal 合作定制作物制图系统（赞比亚试点）；② NASA 加入 Planet "Planetary Security"倡议（RAAPID：高频影像+分析框架早期预警农业冲击）；③ <b>肯尼亚 CroME 倡议</b>（航天局+农业部+微软 AI for Good+NASA Harvest）：作物制图/长势/田块边界/产量预测/灾害预警；④ ESA AgriCEM：CHIME 高光谱（2028 发射，30m，>200 波段）+ LSTM 地表温度（2028，50m，4 天重访）做植被胁迫产品；⑤ 爱尔兰 Proveye 获 ESA 合同开发 ProvVari 精准施肥（Sentinel+无人机+AI）。</p>
+        <div class="biz">🔗 <b>明华衔接：</b>NASA/ESA/肯尼亚案例印证<b>"农业遥感=国家队+AI+商业星座"</b>全球范式。明华在<b>文昌卫星数据中心+科工火箭</b>的布局正卡位"遥感星座发射与数据"上游；结合 SmarCo 东南亚 BD，可关注"农业遥感出海"合作窗口。</div>
+      </div>
+
+      <div class="item" style="border-bottom:none;padding-bottom:0">
+        <div class="t">中研普华：商业遥感星座高密度组网，农业遥感向"普惠化+数字大脑"升级<span class="src">中研普华产业研究院</span><span class="date">2026-07-10</span></div>
+        <p><span class="k">要点：</span>大型农垦基地/政务监管落地成熟，但中小种植户数字化滞后呈分化格局。趋势：① 多源数据融合（光学+SAR+无人机+地面）破天气盲区；② 细分模型覆盖全品类；③ 轻量化下沉降门槛；④ 数据全链条智能化打造"农业数字大脑"（监测-研判-自动执行闭环）。</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 明华下一步衔接建议 -->
+  <div class="next">
+    <h2>🚀 明华下一步衔接建议</h2>
+    <ol>
+      <li><b>锚定海南农垦集团（目标客户）：</b>以海垦"天然橡胶高质量发展+南繁种业"下半年路线图为切入点，推进<b>前期需求调研 + 遥感方案讲解</b>（对接涂部长线），用其"高温干旱限产/胶价底部"痛点论证遥感稳产价值。</li>
+      <li><b>打造"橡胶遥感大模型"样板：</b>借鉴山东"舜耕·粮安"六模型范式，针对海南 353 万亩胶林设计胶园边界/长势/病害/估产模型，形成可演示的"海垦一张图"原型。</li>
+      <li><b>对标北大荒架构降认知成本：</b>引用其"空天地一张图（48 卫星+3.3 万终端、2h 处理 1TB）"作为成熟度背书，快速建立客户信任。</li>
+      <li><b>卡位文昌上游 + 出海：</b>结合科工火箭发射合作与卫星数据中心，讲好"遥感星座数据→农业应用"故事；借 SmarCo 东南亚 BD 关注农业遥感国际合作（参照 NASA/ESA/肯尼亚模式）。</li>
+      <li><b>跟踪政策与胶价双变量：</b>持续监测 EUDR 监管调整、非洲零关税清单、沪胶/RSS3 走势，作为方案 ROI 与客户采购节奏的判断依据。</li>
+    </ol>
+  </div>
+
+  <footer>
+    海垦日报 · 由 WorkBuddy 自动化（每日 09:10）生成 · 关联「卫星主营业务调研」群组<br>
+    <span class="disclaimer">免责声明：本日报基于公开网络检索（巨潮资讯/东方财富/同花顺/上期所/农业农村部/泰伯网/ANRPC/NASA/ESA 等）整理，非投资建议；标注 ⚠ 的为参考值或推测，以官方公告与一线 BD 核实为准。胶价、业绩等实时数据可能滞后，请以来源方最新披露为准。</span>
+  </footer>
+
+</div>
+</body>
+</html>
