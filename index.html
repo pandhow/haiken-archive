@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海垦日报 · 历史归档</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">🌴</span>
+      <div>
+        <h1>海垦日报 <span class="sub">历史归档</span></h1>
+        <div class="meta">卫星主营业务调研 · 每日 09:10 · <span id="issueCount">—</span> 期 · 最新 <span id="latestDate">—</span></div>
+      </div>
+    </div>
+    <div class="search">
+      <input id="searchBox" type="search" placeholder="按标题/标签/日期搜索…" autocomplete="off">
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="side-head">期次列表</div>
+      <ul id="issueList" class="issue-list">
+        <li class="loading">加载中…</li>
+      </ul>
+      <div class="side-foot">
+        <a href="#/about">关于本归档</a>
+      </div>
+    </aside>
+
+    <section class="viewer">
+      <div id="emptyState" class="empty">
+        <div class="empty-ico">📰</div>
+        <p>从左侧选择一期日报查看</p>
+        <p class="hint">或直接访问 <code>#/2026-07-23</code></p>
+      </div>
+      <iframe id="issueFrame" class="issue-frame" hidden></iframe>
+      <div id="aboutPanel" class="about" hidden>
+        <h2>关于本归档</h2>
+        <p>这是一个纯前端的 <b>SPA（单页应用）</b>历史归档站，用于归档「海垦日报」每日自动生成的 HTML 报告。</p>
+        <h3>架构</h3>
+        <ul>
+          <li><b>外壳</b> <code>index.html</code> + <code>app.js</code> + <code>styles.css</code>：列表/路由/渲染</li>
+          <li><b>数据</b> <code>data/manifest.json</code>：期次清单（日期/标题/标签/文件路径）</li>
+          <li><b>内容</b> <code>issues/YYYY-MM-DD.html</code>：每期日报独立 HTML，iframe 载入</li>
+        </ul>
+        <h3>新增一期</h3>
+        <ol>
+          <li>把日报 HTML 丢进 <code>issues/</code>（命名 <code>YYYY-MM-DD.html</code>）</li>
+          <li>在 <code>data/manifest.json</code> 的 <code>issues</code> 数组顶部加一条</li>
+          <li>刷新页面即可</li>
+        </ol>
+        <h3>本地运行</h3>
+        <pre>cd haiken-archive
+python -m http.server 8080
+# 浏览器打开 http://localhost:8080</pre>
+        <p class="hint">直接双击 index.html 也能看（但 fetch manifest 需要 http 协议，建议用上面的本地服务器）。</p>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
