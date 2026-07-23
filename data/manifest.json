@@ -1,0 +1,20 @@
+{
+  "title": "海垦日报 · 历史归档",
+  "source": "WorkBuddy 自动化 automation-1784745739226（每日 09:10 生成）",
+  "_add_issue_help": "新增一期：① 把日报HTML丢进 issues/（命名 YYYY-MM-DD.html）② 在 issues 数组顶部加一条 {date,issue_no,title,tags,file} ③ 刷新页面",
+  "issues": [
+    {
+      "date": "2026-07-23",
+      "issue_no": "001",
+      "title": "海南橡胶跻身《财富》中国500强；农垦用地一张图全面铺开；全球农业遥感进入卫星+AI爆发期",
+      "tags": [
+        "财富500强",
+        "一张图",
+        "沪胶",
+        "CroME",
+        "风云卫星"
+      ],
+      "file": "issues/2026-07-23.html"
+    }
+  ]
+}
