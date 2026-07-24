@@ -2,7 +2,7 @@
 
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-已上线-brightgreen) ![自动归档](https://img.shields.io/badge/每日%2009:40-自动同步-blue)
 
-> 🌐 **公网版**：https://pandhow.github.io/haiken-archive/ ｜ 由「海垦日报·归档+公网同步」自动化每日 09:40 自动发布（日报生成 09:10 → 本地归档 → 推公网）
+> 🌐 **公网版（自定义域名）**：https://hirub.dhow.ink/ ｜ 备用地址：https://pandhow.github.io/haiken-archive/ ｜ 由「海垦日报·归档+公网同步」自动化每日 09:40 自动发布（日报生成 09:10 → 本地归档 → 推公网）
 
 一个**纯前端 SPA**，归档「海垦日报」每日自动生成的 HTML 报告。零后端、零数据库、零构建工具——双击或起个静态服务就能跑。
 
