@@ -4,6 +4,20 @@
   "_add_issue_help": "新增一期：① 把日报HTML丢进 issues/（命名 YYYY-MM-DD.html）② 在 issues 数组顶部加一条 {date,issue_no,title,tags,file} ③ 刷新页面",
   "issues": [
     {
+      "date": "2026-07-27",
+      "issue_no": "005",
+      "title": "海南橡胶预亏收窄今复市；海垦昌农胡椒加工车间封顶；遥感×农业全球签约潮",
+      "tags": [
+        "海南橡胶",
+        "昌农胡椒",
+        "农垦遥感",
+        "长光卫星",
+        "中希农田",
+        "沪胶RU"
+      ],
+      "file": "issues/2026-07-27.html"
+    },
+    {
       "date": "2026-07-26",
       "issue_no": "004",
       "title": "省国资委调研海垦重点项目；韩国首颗农林卫星升空；沪胶周线收16760区间震荡",
