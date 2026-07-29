@@ -66,3 +66,19 @@ body{background:radial-gradient(1200px 600px at 85% -10%,#16233c 0%,var(--bg) 55
 /* scrollbar */
 .issue-list::-webkit-scrollbar,.about::-webkit-scrollbar{width:8px}
 .issue-list::-webkit-scrollbar-thumb,.about::-webkit-scrollbar-thumb{background:#2a3a57;border-radius:4px}
+
+/* ====== 移动端（仅手机 ≤600px）====== */
+@media (max-width:600px){
+  .topbar{flex-direction:column;align-items:stretch;gap:8px;padding:10px 12px}
+  .topbar h1{font-size:17px}
+  .topbar .meta{font-size:11px}
+  .search input{width:100%}
+  .layout{flex-direction:column}
+  .sidebar{width:100%;flex:0 0 auto;max-height:none;border-right:none;border-bottom:1px solid var(--line)}
+  .issue-list{display:flex;flex-direction:row;overflow-x:auto;padding:8px;gap:8px}
+  .issue-item{border-bottom:none;border-left:1px solid var(--line);border-radius:10px;min-width:150px;flex:0 0 auto;padding:10px 12px}
+  .issue-item.active{border-left-color:var(--haiken);background:var(--panel2)}
+  .issue-item .title{font-size:13px}
+  .viewer{flex:1;min-height:0}
+  .about{padding:18px 14px}
+}
