@@ -67,18 +67,28 @@ body{background:radial-gradient(1200px 600px at 85% -10%,#16233c 0%,var(--bg) 55
 .issue-list::-webkit-scrollbar,.about::-webkit-scrollbar{width:8px}
 .issue-list::-webkit-scrollbar-thumb,.about::-webkit-scrollbar-thumb{background:#2a3a57;border-radius:4px}
 
-/* ====== 移动端（仅手机 ≤600px）====== */
+/* ====== 移动端（仅手机 ≤600px）：横向期次条 + 单页一个大滚动（同东南亚卫星动态）====== */
 @media (max-width:600px){
-  .topbar{flex-direction:column;align-items:stretch;gap:8px;padding:10px 12px}
-  .topbar h1{font-size:17px}
-  .topbar .meta{font-size:11px}
-  .search input{width:100%}
-  .layout{flex-direction:column}
-  .sidebar{width:100%;flex:0 0 auto;max-height:none;border-right:none;border-bottom:1px solid var(--line)}
-  .issue-list{display:flex;flex-direction:row;overflow-x:auto;padding:8px;gap:8px}
-  .issue-item{border-bottom:none;border-left:1px solid var(--line);border-radius:10px;min-width:150px;flex:0 0 auto;padding:10px 12px}
-  .issue-item.active{border-left-color:var(--haiken);background:var(--panel2)}
-  .issue-item .title{font-size:13px}
-  .viewer{flex:1;min-height:0}
-  .about{padding:18px 14px}
+  body{overflow:auto}
+  #app{display:block;height:auto;min-height:100vh;overflow:visible}
+  .topbar{flex-direction:column;align-items:stretch;gap:8px;padding:10px 14px;
+    position:sticky;top:0;z-index:30;box-shadow:0 2px 10px rgba(0,0,0,.35)}
+  .topbar h1{font-size:16px}
+  .topbar .meta{font-size:10.5px}
+  .search{display:none}
+  .layout{display:block}
+  .sidebar{width:100%;flex:0 0 auto;max-height:92px;border-right:none;border-bottom:1px solid var(--line);
+    background:var(--panel);display:flex;flex-direction:row;align-items:stretch;overflow-x:auto;overflow-y:hidden}
+  .side-head{display:none}
+  .issue-list{display:flex;flex-direction:row;gap:8px;padding:8px 12px;overflow:visible;flex-wrap:nowrap;align-items:center}
+  .issue-item{flex:0 0 auto;white-space:nowrap;border-left:none;border-bottom:none;
+    border:1px solid var(--line);border-radius:10px;padding:7px 12px;min-width:128px}
+  .issue-item.active{border-color:var(--haiken);background:var(--panel2)}
+  .issue-item .tag{display:none}
+  .issue-item .title{font-size:12.5px;margin:2px 0 0;max-width:150px;overflow:hidden;text-overflow:ellipsis}
+  .side-foot{display:none}
+  .viewer{display:block;height:auto;min-height:60vh;overflow:visible}
+  .empty{position:static;padding:48px 20px}
+  .issue-frame{position:static;width:100%;height:auto;min-height:60vh;border:none;display:block;background:#fff}
+  .about{position:static;padding:20px 18px}
 }
