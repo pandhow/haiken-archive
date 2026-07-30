@@ -108,4 +108,23 @@ function esc(s) {
   }[c]));
 }
 
+// 手机端：把 iframe 高度自适应为内容高度，让整页只滚动一次（消除 iframe 内部滚动）
+function autoSizeFrame() {
+  if (!window.matchMedia || !window.matchMedia('(max-width:600px)').matches) {
+    $frame.style.height = '';   // 桌面端恢复绝对填充
+    return;
+  }
+  try {
+    const doc = $frame.contentDocument || ($frame.contentWindow && $frame.contentWindow.document);
+    if (!doc) return;
+    const h = Math.max(
+      doc.body ? doc.body.scrollHeight : 0,
+      doc.documentElement ? doc.documentElement.scrollHeight : 0
+    );
+    if (h) $frame.style.height = h + 'px';
+  } catch (e) { /* 跨域等异常忽略 */ }
+}
+$frame.addEventListener('load', autoSizeFrame);
+window.addEventListener('resize', autoSizeFrame);
+
 boot();
