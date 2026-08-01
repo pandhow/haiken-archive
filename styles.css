@@ -67,16 +67,22 @@ body{background:radial-gradient(1200px 600px at 85% -10%,#16233c 0%,var(--bg) 55
 .issue-list::-webkit-scrollbar,.about::-webkit-scrollbar{width:8px}
 .issue-list::-webkit-scrollbar-thumb,.about::-webkit-scrollbar-thumb{background:#2a3a57;border-radius:4px}
 
-/* ====== 移动端（仅手机 ≤600px）：横向期次条 + 单页一个大滚动（同东南亚卫星动态）====== */
+/* ====== 移动端（仅手机 ≤600px）：横向期次条 + 单页一个大滚动（同东南亚卫星动态，浅色主题）====== */
 @media (max-width:600px){
-  body{overflow:auto}
+  /* 浅色调变量：与东南亚卫星手机模块一致 */
+  :root{
+    --bg:#eef1f7; --panel:#ffffff; --panel2:#f3f6fc; --line:#dde3ef;
+    --ink:#1b2440; --sub:#62708f; --haiken:#2c6fd6; --hi:#b07d12; --ok:#0f9d8c;
+  }
+  body{overflow:auto;background:var(--bg);color:var(--ink)}
   #app{display:block;height:auto;min-height:100vh;overflow:visible}
   .topbar{flex-direction:column;align-items:stretch;gap:8px;padding:10px 14px;
-    position:sticky;top:0;z-index:30;box-shadow:0 2px 10px rgba(0,0,0,.35)}
+    position:sticky;top:0;z-index:30;background:var(--panel);box-shadow:0 2px 10px rgba(20,40,90,.08)}
   .topbar h1{font-size:16px}
   .topbar .meta{font-size:10.5px}
   .search{display:none}
   .layout{display:block}
+  /* 滑动框①：横向期次条（浅色 + 浅色滚动条） */
   .sidebar{width:100%;flex:0 0 auto;max-height:92px;border-right:none;border-bottom:1px solid var(--line);
     background:var(--panel);display:flex;flex-direction:row;align-items:stretch;overflow-x:auto;overflow-y:hidden}
   .side-head{display:none}
@@ -87,8 +93,20 @@ body{background:radial-gradient(1200px 600px at 85% -10%,#16233c 0%,var(--bg) 55
   .issue-item .tag{display:none}
   .issue-item .title{font-size:12.5px;margin:2px 0 0;max-width:150px;overflow:hidden;text-overflow:ellipsis}
   .side-foot{display:none}
-  .viewer{display:block;height:auto;min-height:60vh;overflow:visible}
+  /* 滑动框②：内容/关于区（浅底深字 + 浅色滚动条） */
+  .viewer{display:block;height:auto;min-height:60vh;overflow:visible;background:var(--bg)}
   .empty{position:static;padding:48px 20px}
   .issue-frame{position:static;width:100%;height:auto;min-height:60vh;border:none;display:block;background:#fff}
-  .about{position:static;padding:20px 18px}
+  .about{position:static;padding:20px 18px;color:var(--ink)}
+  .about h2{color:var(--hi)}
+  .about h3{color:var(--ok)}
+  .about p,.about li{color:#475270}
+  .about code{background:var(--panel2);color:var(--hi);border:1px solid var(--line)}
+  .about pre{background:var(--panel2);border:1px solid var(--line);color:#475270}
+  .about .hint{color:#9aa6bd}
+  /* 浅色滚动条（期次条横向 + 内容/关于纵向） */
+  .sidebar::-webkit-scrollbar{height:6px}
+  .sidebar::-webkit-scrollbar-thumb{background:#c2cce0;border-radius:4px}
+  .about::-webkit-scrollbar,.issue-list::-webkit-scrollbar{width:8px}
+  .about::-webkit-scrollbar-thumb,.issue-list::-webkit-scrollbar-thumb{background:#c2cce0;border-radius:4px}
 }
