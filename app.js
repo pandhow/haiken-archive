@@ -2,7 +2,9 @@
 // 外壳已加载 → 拉 manifest → 渲染列表 → 哈希路由 → iframe 载入当日 HTML
 
 const MANIFEST_URL = 'data/manifest.json';
+const INDEX_URL = 'data/index.json';
 let ISSUES = [];        // 全部期次（按 date 降序）
+let INDEX_MAP = {};     // date -> 正文纯文本（用于搜内容关键词）
 let activeDate = null;
 
 const $list = document.getElementById('issueList');
@@ -25,6 +27,16 @@ async function boot() {
   }
   $count.textContent = ISSUES.length;
   $latest.textContent = ISSUES[0] ? ISSUES[0].date : '—';
+
+  // 内容索引（用于搜正文关键词）。失败不影响元数据搜索。
+  try {
+    const ri = await fetch(INDEX_URL, { cache: 'no-store' });
+    if (ri.ok) {
+      const idx = await ri.json();
+      (idx.issues || []).forEach(it => { INDEX_MAP[it.date] = it.text || ''; });
+    }
+  } catch (e) { /* 忽略：仅正文搜索不可用 */ }
+
   renderList(ISSUES);
   route();                       // 按 URL hash 载入
   window.addEventListener('hashchange', route);
@@ -56,7 +68,8 @@ function onSearch() {
     (it.title || '').toLowerCase().includes(q) ||
     (it.date || '').includes(q) ||
     (it.tags || []).some(t => t.toLowerCase().includes(q)) ||
-    String(it.issue_no).includes(q));
+    String(it.issue_no).includes(q) ||
+    (INDEX_MAP[it.date] || '').toLowerCase().includes(q));  // 新增：搜右侧正文
   renderList(hit);
 }
 
