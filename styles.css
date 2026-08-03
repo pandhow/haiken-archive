@@ -87,7 +87,10 @@ body{background:var(--bg);color:var(--ink);
   .issue-item .title{font-size:12.5px;margin:2px 0 0;max-width:150px;overflow:hidden;text-overflow:ellipsis}
   .side-foot{display:none}
   .viewer{display:block;height:auto;min-height:60vh;overflow:visible;background:var(--bg)}
-  .empty{position:static;padding:48px 20px}
+  .empty{position:static;padding:48px 20px;text-align:center}
+  .empty[hidden]{display:none}            /* 关键修复：让 [hidden] 压过 display:flex */
+  .empty-ico{font-size:42px}
+  .empty p{font-size:14px}
   .issue-frame{position:static;width:100%;height:auto;min-height:60vh;border:none;display:block;background:#fff}
   .about{position:static;padding:20px 18px}
 }
