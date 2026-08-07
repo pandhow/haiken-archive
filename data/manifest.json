@@ -4,6 +4,20 @@
   "_add_issue_help": "新增一期：① 把日报HTML丢进 issues/（命名 YYYY-MM-DD.html）② 在 issues 数组顶部加一条 {date,issue_no,title,tags,file} ③ 刷新页面",
   "issues": [
     {
+      "date": "2026-08-07",
+      "issue_no": "016",
+      "title": "自贸港鲜品出海赋能农业；长光推按需付费卫星地图；吉林钙钛矿载荷在轨验证",
+      "tags": [
+        "海南自贸港",
+        "文昌航天城",
+        "长光卫星",
+        "Planet",
+        "风云一号",
+        "农业遥感"
+      ],
+      "file": "issues/2026-08-07.html"
+    },
+    {
       "date": "2026-08-06",
       "issue_no": "015",
       "title": "文昌8月密集发射开启；长光按量付费卫星地图；东方慧眼双星在轨AI",
