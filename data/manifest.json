@@ -4,6 +4,34 @@
   "_add_issue_help": "新增一期：① 把日报HTML丢进 issues/（命名 YYYY-MM-DD.html）② 在 issues 数组顶部加一条 {date,issue_no,title,tags,file} ③ 刷新页面",
   "issues": [
     {
+      "date": "2026-09-01",
+      "issue_no": "037",
+      "title": "海南自贸港第7批营商案例推广；文昌卫星超级工厂试产；天仪SAR驰援吉隆",
+      "tags": [
+        "Hainan-free-trade-port",
+        "Wenchang",
+        "Hainan-rubber",
+        "agriculture-remote-sensing",
+        "SAR",
+        "earth-observation"
+      ],
+      "file": "issues/2026-09-01.html"
+    },
+    {
+      "date": "2026-08-31",
+      "issue_no": "036",
+      "title": "文昌航天论坛落幕数据出海启航；长光数据服务营收过半；印度卫星农业监测扩围",
+      "tags": [
+        "海南自贸港",
+        "文昌航天城",
+        "长光吉林一号",
+        "Planet",
+        "遥感农业",
+        "数字高程模型"
+      ],
+      "file": "issues/2026-08-31.html"
+    },
+    {
       "date": "2026-08-30",
       "issue_no": "035",
       "title": "嫦娥七号2026窗口取消；沪琼推卫星数据服务；海南橡胶半年报出炉",
