@@ -4,6 +4,55 @@
   "_add_issue_help": "新增一期：① 把日报HTML丢进 issues/（命名 YYYY-MM-DD.html）② 在 issues 数组顶部加一条 {date,issue_no,title,tags,file} ③ 刷新页面",
   "issues": [
     {
+      "date": "2026-09-10",
+      "issue_no": "046",
+      "title": "文昌21射+中泰智算星群实验室揭牌；海垦经营承压；NASA CSDA扩容；Sentinel-2里程碑",
+      "tags": [
+        "文昌航天城",
+        "海南橡胶",
+        "长光",
+        "Planet",
+        "Airbus",
+        "Maxar",
+        "NASA CSDA",
+        "Sentinel-2",
+        "中泰合作"
+      ],
+      "file": "issues/2026-09-10.html"
+    },
+    {
+      "date": "2026-09-09",
+      "issue_no": "045",
+      "title": "海南橡胶超级厄尔尼诺叙事涨停；跨境贸易区运营主体确认；北大荒长光双深读",
+      "tags": [
+        "海南橡胶",
+        "超级厄尔尼诺",
+        "海南自贸区",
+        "文昌航天城",
+        "北大荒",
+        "长光卫星",
+        "Planet",
+        "Vantor",
+        "高分一号",
+        "产量估测"
+      ],
+      "file": "issues/2026-09-09.html"
+    },
+    {
+      "date": "2026-09-08",
+      "issue_no": "044",
+      "title": "长光245颗+合同额增58.5%；北大荒智壤一张图；Planet股价V型反转",
+      "tags": [
+        "长光",
+        "北大荒",
+        "海南自贸区",
+        "Planet",
+        "遥感",
+        "数字农业"
+      ],
+      "file": "issues/2026-09-08.html"
+    },
+    {
       "date": "2026-09-07",
       "issue_no": "043",
       "title": "海哨双星组网南海高频监测；胶价慢牛机构首覆买入；Planet主权管线超40亿美元",
