@@ -4,6 +4,22 @@
   "_add_issue_help": "新增一期：① 把日报HTML丢进 issues/（命名 YYYY-MM-DD.html）② 在 issues 数组顶部加一条 {date,issue_no,title,tags,file} ③ 刷新页面",
   "issues": [
     {
+      "date": "2026-09-19",
+      "issue_no": "054",
+      "title": "长光130万中标市级遥感运维；Vantor建15分钟重访Pulse星座；高分六号红边波段",
+      "tags": [
+        "海南自贸区",
+        "文昌航天城",
+        "长光",
+        "Vantor",
+        "Airbus",
+        "Planet",
+        "高分六号",
+        "红边波段"
+      ],
+      "file": "issues/2026-09-19.html"
+    },
+    {
       "date": "2026-09-18",
       "issue_no": "053",
       "title": "长十二遥十官方确认成功；Google农业AI扩至东南亚11国；长光建成全球最大立体测绘星群",
