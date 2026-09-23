@@ -4,6 +4,22 @@
   "_add_issue_help": "新增一期：① 把日报HTML丢进 issues/（命名 YYYY-MM-DD.html）② 在 issues 数组顶部加一条 {date,issue_no,title,tags,file} ③ 刷新页面",
   "issues": [
     {
+      "date": "2026-09-23",
+      "issue_no": "058",
+      "title": "长新数据集团揭牌做长光数据合伙人；长八甲今晚计划发射；Planet柏林工厂开业；Landsat-5商业化镜鉴",
+      "tags": [
+        "海南自贸区",
+        "文昌航天城",
+        "海南橡胶",
+        "长新数据集团",
+        "长光卫星",
+        "Planet",
+        "真实性验证",
+        "Landsat-5"
+      ],
+      "file": "issues/2026-09-23.html"
+    },
+    {
       "date": "2026-09-22",
       "issue_no": "057",
       "title": "长光双轮驱动战略；长八甲9/23计划发射；Planet从像素到洞察；Landsat-1五十周年回望",
