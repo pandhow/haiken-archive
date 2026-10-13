@@ -4,6 +4,13 @@
   "_add_issue_help": "新增一期：① 把日报HTML丢进 issues/（命名 YYYY-MM-DD.html）② 在 issues 数组顶部加一条 {date,issue_no,title,tags,file} ③ 刷新页面",
   "issues": [
     {
+      "date": "2026-10-13",
+      "issue_no": "075",
+      "title": "文昌星箭产业园光储配套；海垦19万亩胶园招标；Planet Pelican-12待发",
+      "tags": "文昌航天城,海垦集团,长光,Planet,农业遥感,遥感技术",
+      "file": "issues/2026-10-13.html"
+    },
+    {
       "date": "2026-10-12",
       "issue_no": "074",
       "title": "文昌高频发射常态化；海垦橡胶产能19万亩招标；长光安徽0.5米中标",
