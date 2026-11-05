@@ -44,7 +44,9 @@ from pathlib import Path
 # 归档站根目录 = 本脚本所在目录（haiken-archive/）
 ARCHIVE_DIR = Path(__file__).resolve().parent
 # 日报源目录（自动化产物落盘处）
-SOURCE_DIR = Path(r"D:\Harry的文件")
+# 注：日报自动化产物路径已从 D:\Harry的文件 迁至 D:\Workbuddy\01_自动日报\海垦日报
+# （2026-11-04 起），此处同步更新默认源目录，避免定时任务静默"未找到文件"。
+SOURCE_DIR = Path(r"D:\Workbuddy\01_自动日报\海垦日报")
 ISSUES_DIR = ARCHIVE_DIR / "issues"
 MANIFEST = ARCHIVE_DIR / "data" / "manifest.json"
 
