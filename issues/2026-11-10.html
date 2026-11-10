@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海垦日报 第 101 期</title>
+<meta name="archive-title" content="文昌中飞航天小镇公示；海垦空天遥感常态化；佳格4亿亩地块级估产">
+<meta name="archive-tags" content="海南自贸区,文昌航天城,海垦,长光,佳格天地,高分三号">
+<style>
+:root{
+  --bg:#eef1f7; --panel:#ffffff; --panel2:#f3f6fc; --line:#dde3ef;
+  --txt:#1b2440; --sub:#62708f; --gold:#b07d12;
+  --c1:#1e6fd6; --c2:#2e9e5b; --c3:#8b5cf6; --c4:#14b8c4;
+  --hi:#e03131; --mid:#c08a16; --lo:#9aa6bd;
+}
+*{box-sizing:border-box;}
+html,body{height:auto;}
+body{margin:0; background:var(--bg); color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.65; font-size:15px;}
+.wrap{max-width:880px; margin:0 auto; padding:28px 20px 56px;}
+/* 封面卡 header */
+header{background:linear-gradient(135deg,#2c3e6b,#1b2440); color:#fff; border-radius:16px; padding:30px 26px; margin-bottom:26px;}
+header .tag{display:inline-block; font-size:12px; letter-spacing:2px; font-weight:700; background:rgba(255,255,255,.16); color:#ffe9b0; padding:5px 12px; border-radius:999px;}
+header h1{margin:14px 0 6px; font-size:27px; color:#fff; letter-spacing:1px; font-weight:700;}
+header .sub-title{margin:0; color:#cdd6ee; font-size:15px; font-weight:500;}
+header .meta{margin-top:16px; font-size:13px; color:#cdd6ee; display:flex; flex-wrap:wrap; gap:8px 18px;}
+header .meta span{background:rgba(255,255,255,.1); padding:4px 10px; border-radius:8px;}
+section{margin:30px 0;}
+h2{font-size:20px; margin:34px 0 16px; padding-left:12px; border-left:5px solid var(--c1); color:var(--txt);}
+h2.s1{border-color:var(--c1)} h2.s2{border-color:var(--c2)} h2.s3{border-color:var(--c3)} h2.s4{border-color:var(--c4)}
+/* 核心看点 */
+.key{background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:14px; padding:18px 22px; box-shadow:0 2px 10px rgba(27,36,64,.05);}
+.key ol{margin:0; padding-left:22px;}
+.key li{margin:10px 0; color:var(--txt); font-size:14px; line-height:1.7;}
+/* 热度速览 */
+.matrix{display:grid; grid-template-columns:repeat(4,1fr); gap:12px;}
+.mcell{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:14px 12px; text-align:center;}
+.mcell .nm{font-size:13px; color:var(--sub); margin-bottom:8px; font-weight:600;}
+.mcell .lv{font-size:14px; font-weight:700;}
+.lv-h{color:var(--hi);} .lv-m{color:var(--mid);} .lv-n{color:var(--lo);}
+/* 正文卡片 */
+.card{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:16px 18px; margin-bottom:14px; box-shadow:0 2px 10px rgba(27,36,64,.05);}
+.card.b1{border-left:4px solid var(--c1)} .card.b2{border-left:4px solid var(--c2)} .card.b3{border-left:4px solid var(--c3)} .card.b4{border-left:4px solid var(--c4)}
+.ttl{font-weight:bold; font-size:16px; color:var(--txt); margin-bottom:4px;}
+.meta{font-size:12px; color:var(--sub); margin-bottom:8px;} .meta span{margin-right:14px;}
+.biz{background:rgba(176,127,18,.12); border-left:4px solid var(--gold); border-radius:0 10px 10px 0; padding:12px 16px; margin-top:10px; font-size:13.5px; color:var(--txt);}
+.biz::before{content:"🔗 明华关联 "; color:var(--gold); font-weight:bold;}
+.dim{font-size:13px; color:var(--sub); margin:16px 0 8px; font-weight:bold; letter-spacing:1px;}
+ul{padding-left:20px;} li{margin:5px 0; color:var(--txt);}
+table{width:100%; border-collapse:collapse; margin:12px 0; font-size:14px;}
+th,td{border:1px solid var(--line); padding:8px 10px; text-align:center;}
+th{background:var(--panel2); color:var(--sub);}
+.up{color:var(--hi); font-weight:bold;} .down{color:var(--c2); font-weight:bold;}
+.hl{color:var(--gold); font-weight:bold;}
+/* 公司标签 */
+.co{display:inline-block; font-size:12px; border-radius:6px; padding:1px 9px; margin-right:8px; vertical-align:1px; border:1px solid;}
+.co.longguang{background:rgba(30,111,214,.12); color:#1a4db5; border-color:rgba(30,111,214,.35);}
+.co.siwei{background:rgba(46,158,91,.12); color:#1a7a44; border-color:rgba(46,158,91,.35);}
+.co.planet{background:rgba(139,92,246,.12); color:#6b3fd6; border-color:rgba(139,92,246,.35);}
+.co.maxar{background:rgba(176,127,18,.12); color:#8a6200; border-color:rgba(176,127,18,.35);}
+.co.airbus{background:rgba(20,184,196,.12); color:#0e7f88; border-color:rgba(20,184,196,.35);}
+.terms{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:12px 0;}
+.term{background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--c4); border-radius:10px; padding:14px 16px; font-size:13.5px; color:var(--txt);}
+.term b{color:var(--c4);}
+.case{background:rgba(20,184,196,.06); border:1px solid rgba(20,184,196,.3); border-radius:10px; padding:16px 18px; margin-top:10px;}
+.case h3{font-size:16px; color:var(--c4); margin-bottom:8px;}
+.next{background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:10px; padding:16px 18px; box-shadow:0 2px 10px rgba(27,36,64,.05);}
+.next h2{color:var(--txt); font-weight:bold; font-size:16px; margin:0 0 10px; border:none; padding:0;}
+.next ol{margin:0; padding-left:22px;}
+.next li{margin:8px 0; color:var(--txt);}
+footer{margin-top:40px; padding-top:18px; border-top:1px solid var(--line); font-size:12px; color:var(--sub); text-align:center;}
+/* 移动端：单页滚动 */
+@media (max-width:600px){
+  html,body{height:auto!important; overflow:visible!important;}
+  .wrap{max-width:100%; margin:0; padding:16px 12px 40px; height:auto!important; display:block!important; overflow:visible!important;}
+  header{padding:22px 16px;}
+  header h1{font-size:22px;}
+  h2{font-size:18px; margin:26px 0 12px;}
+  .matrix{grid-template-columns:repeat(2,1fr);}
+  .terms{grid-template-columns:1fr;}
+  .card,.key{padding:14px;}
+  .card .ttl{font-size:15px;}
+  table{font-size:12px;} th,td{padding:6px 5px;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="tag">HAIKEN DAILY · 第 101 期</span>
+    <h1>海垦日报</h1>
+    <p class="sub-title">监测主线：遥感 + 农业 + 海南 / 文昌 / 火箭</p>
+    <div class="meta">
+      <span>2026-11-10（周二刊）</span>
+      <span>关联群组：卫星主营业务调研</span>
+      <span>板块：海南橡胶/农垦 · 全国农垦 · 遥感×农业 · 遥感技术</span>
+      <span>出品：Harry 🎩 for 明华 · Astrolink BD</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>本期核心看点</h2>
+    <div class="key"><ol>
+      <li>🚀 文昌<b>中飞航天产业小镇 A 地块</b>进入批前公示（11/5–11/11），火箭卫星产业园再添配套载体；长八甲 11/20、长十二 11/24 发射排期待官方确认，不预判结果。</li>
+      <li>🏢 海垦入股海南空天集团后，"<b>胶林遥感监测 + 病虫害预警 + 低空防火巡检</b>"已常态化运行——农垦连片土地成空天技术最佳试验场（明华强关联）。</li>
+      <li>🛰️ 长光"北吉星"IP 亮相第四届中国（吉林）动漫大会，把 161 颗吉林一号能力做成潮玩 + 卫星影像定制（约 50 元/km²、0.5m），商业遥感 C 端破圈。</li>
+      <li>🌾 佳格天地已服务全国约 <b>4 亿亩耕地</b>、提前 30–60 天估产；江苏海安实证水稻亩产 +27 斤、化肥 −23.6%——遥感×农业进入地块级落地期。</li>
+      <li>📡 第 101 期历史案例拆解<b>高分三号 GF-3</b>：我国首颗 C 波段 SAR，穿透云雾雨雪，专治南方多雨区农情监测与洪涝渍害。</li>
+    </ol></div>
+  </section>
+
+  <section>
+    <h2>板块热度速览</h2>
+    <div class="matrix">
+      <div class="mcell"><div class="nm">板块一·海南橡胶&海垦</div><div class="lv lv-h">● 高</div></div>
+      <div class="mcell"><div class="nm">板块二·全国农垦体系</div><div class="lv lv-m">● 中</div></div>
+      <div class="mcell"><div class="nm">板块三·遥感×农业</div><div class="lv lv-h">● 高</div></div>
+      <div class="mcell"><div class="nm">板块四·遥感技术</div><div class="lv lv-h">● 高</div></div>
+    </div>
+  </section>
+
+  <h2 class="s1">板块一 · 海南橡胶 & 海垦集团</h2>
+
+  <div class="card b1">
+    <div class="ttl">海南自贸区：封关细则落地，"加工增值 30%"内销免关税红利明确</div>
+    <div class="meta"><span>来源：海南省人民政府网 / 海南省财政厅等三部门</span><span>日期：2026-11-02 印发（11/10 仍有媒体解读）</span></div>
+    <ul>
+      <li>海南省财政厅、省发改委、省商务厅联合印发《关于海南自由贸易港全岛封关运作有关管理事项的通知》（琼财税〔2026〕986 号），对封关后"一线""二线"具体管理边界作出细化。</li>
+      <li>核心落点：<b>加工增值达 30%</b> 的货物从海南进入内地免征关税，保税货物岛内流转、加工增值后内销规则清晰化。</li>
+      <li>对<b>天然橡胶深加工、热带农产品精深加工</b>企业直接利好——原料"一线"进岛保税、加工增值后"二线"内销享免关税，成本结构优化。</li>
+    </ul>
+  </div>
+
+  <div class="card b1">
+    <div class="ttl">文昌航天城：中飞航天产业小镇 A 地块批前公示，产业园配套再扩容</div>
+    <div class="meta"><span>来源：文昌市人民政府网 / 文昌国际航天城管理局</span><span>日期：2026-11-05 公示（公示期 11/5–11/11）</span></div>
+    <ul>
+      <li>文昌市中飞航天产业小镇 A 地块建设项目设计方案进入批前公示，公示期 7 天（11/5–11/11），意见反馈渠道同步开放。</li>
+      <li>该项目是文昌火箭卫星产业园"星箭场"模式下的又一配套载体，与已落地的快舟航天、九天行歌（合计出让 287 亩、成交约 1.32 亿元）形成产业集聚。</li>
+      <li>发射排期提示：长十二遥十一已于 11/9 成功（央视/海南日报多源确认）；<b>长八甲遥十三（计划 11/20）、长十二遥十二（计划 11/24）为排期，以官方最终通告为准，不预判结果</b>。</li>
+    </ul>
+    <div class="biz">明华与航天科工火箭（快舟系列）已签战略合作，文昌火箭卫星产业园聚集效应增强，可为明华商业火箭发射服务（总包集成）提供配套企业与落地场景协同。</div>
+  </div>
+
+  <div class="card b1">
+    <div class="ttl">海垦集团：热农集团联动 16 市县菜篮子，达成百万吨级保底收购意向</div>
+    <div class="meta"><span>来源：海垦热农集团 / 腾讯新闻</span><span>日期：2026-11-06 交流会（11/9 报道）</span></div>
+    <ul>
+      <li>海垦热农集团主办海南省菜篮子业务交流会，联动全省 16 个市县菜篮子公司，就玉米、冬瓜、辣椒等主栽品类达成 <b>100 万吨以上保底收购意向订单</b>。</li>
+      <li>创新推出"<b>触发式保底</b>"机制：市场价低于约定保底线时自动启动保价收购，从源头降低瓜菜集中上市期"价贱卖难"风险。</li>
+      <li>依托"以销定产"把各市县产能数据统一接入产销调度体系，对标《健全海南省农产品供销体系三年行动方案（2026–2028）》。</li>
+    </ul>
+  </div>
+
+  <div class="card b1">
+    <div class="ttl">海垦集团：与省物流集团座谈，协同农产品产供销与物流仓储体系</div>
+    <div class="meta"><span>来源：海南农垦集团官微</span><span>日期：2026-11-05</span></div>
+    <ul>
+      <li>海垦集团与海南省物流集团座谈，围绕协同推进我省农产品产供销体系和物流仓储支撑体系建设深入探讨，推动资源开放、信息共享、互为支撑。</li>
+      <li>同日海垦还与广州越秀集团座谈，深化产业协同；集团党委理论学习中心组专题学习境外企业管控。</li>
+    </ul>
+  </div>
+
+  <div class="card b1">
+    <div class="ttl">海垦集团：入股海南空天集团后，"向天出发"空天应用常态化</div>
+    <div class="meta"><span>来源：海南农垦报（2026.11.6）/ 今日头条</span><span>日期：2026-11-06</span></div>
+    <ul>
+      <li>海垦完成对海南空天集团注资入股，跻身海南商业航天、低空经济战略布局方阵，融入自贸港"五向图强"特色产业链。</li>
+      <li>依托无人机航测、卫星遥感，海垦已建成土地"一张图"数据平台（测绘精度可达 0.1 亩），<b>胶林遥感监测、病虫害预警、林区低空防火巡检已常态化运行</b>。</li>
+      <li>同步拓展低空植保、巡护、应急转运等场景；航天育种（太空诱变 + 南繁加代）丰富热带作物种质资源。</li>
+    </ul>
+    <div class="biz">海垦"土地一张图 + 胶林遥感监测"模式是明华在海南落地农业遥感"一张图"的直接范本；明华对接海南卫星数据与应用研究中心，可优先复用该数据底座与业务流程。</div>
+  </div>
+
+  <h2 class="s2">板块二 · 全国农垦体系（遥感相关）</h2>
+
+  <div class="card b2">
+    <div class="ttl">北大荒：空天地人机一体化 + 农业大模型，4800 万亩"数字身份证"持续赋能</div>
+    <div class="meta"><span>来源：北大荒集团 / 北大荒信息公司</span><span>日期：持续运营（2026 年度）</span></div>
+    <ul>
+      <li>北大荒信息公司深耕"北大荒未来农场"模式，研发"<b>天工开悟</b>"农业大模型，重点突破智能遥感解析、农业大数据建模与智能种植决策。</li>
+      <li>"空天地人机"一体化体系接入 49 颗卫星、覆盖约 4800 万亩耕地，构建地块级数字身份证，神农大模型支撑处方图与农事决策。</li>
+      <li>作为农垦系统遥感应用标杆，其"连片土地 + 卫星遥感 + AI 大模型"闭环是其他垦区数字化的重要参照。</li>
+    </ul>
+  </div>
+
+  <div class="card b2">
+    <div class="ttl"><span class="co longguang">长光</span>北吉星家族 IP 亮相动漫大会，商业遥感 C 端破圈</div>
+    <div class="meta"><span>来源：网易 / 同花顺财经（吉刻新闻）</span><span>日期：2026-11-06 至 11-08</span></div>
+    <ul>
+      <li>长光卫星"吉林一号"官方原创 IP——北吉星家族（松松/翎翎/团团/沐沐/环环/金爷/安安）亮相第四届中国（吉林）动漫大会创孵投招商推介会。</li>
+      <li>7 个角色对应 7 项真实卫星能力，其中<b>"团团"扎根农业</b>；线下 5S 形象店落子长春"这有山"，计划 2027 年 1 月开业。</li>
+      <li>最具新意：依托吉林一号 0.5m 分辨率，推出<b>卫星影像定制服务（约 50 元/km²）</b>，把行业遥感能力转化为大众藏品；161 颗在轨、全球最大亚米级商业遥感星座。</li>
+    </ul>
+    <div class="biz">长光"IP 化 + 影像定制"的 C 端打法值得借鉴其品牌化思路；但明华定位 B 端政企数据服务，更宜对标其"农业估产/林草监测"行业解决方案而非潮玩路线。</div>
+  </div>
+
+  <div class="card b2">
+    <div class="ttl"><span class="co siwei">四维</span>2026 商业遥感格局：新一代系统在轨 10 颗，测绘级精度定位</div>
+    <div class="meta"><span>来源：2026 中国商业遥感卫星市场竞争格局报告（行业报告口径）</span><span>日期：2026 年度</span></div>
+    <ul>
+      <li>报告口径：中国四维（四维高景）新一代系统在轨 <b>10 颗</b>（光学 + SAR + 宽幅多谱段），定位"测绘级精度"，契合自然资源确权与边界管理需求。</li>
+      <li>航天科技集团背景，政府间合作与"一带一路"基础深厚；行业 CR5 约 65%，头部集中与细分突围并存。</li>
+      <li>与长光（161 颗、高频重访）、航天宏图（女娲 SAR 星座）、中科卫星（AIRSAT）共同构成国内头部星座阵营。</li>
+    </ul>
+  </div>
+
+  <h2 class="s3">板块三 · 遥感 × 农业（全球）</h2>
+
+  <div class="card b3">
+    <div class="ttl">佳格天地：服务全国约 4 亿亩耕地，地块级估产提前 30–60 天</div>
+    <div class="meta"><span>来源：新华财经 / 中国经济网</span><span>日期：2026-11-09</span></div>
+    <ul>
+      <li>卫星数据应用企业佳格天地 CEO 张弓：依托卫星数据已服务全国约 <b>4 亿亩耕地</b>，实现 10m×10m 地块级识别，长势监测每 8 天更新，覆盖耕种管收全周期，可提前 30–60 天估产。</li>
+      <li>江苏海安实证：卫星遥感 + 地面物联网 + 无人机叠加，水稻亩产增加 27 斤、亩均成本降约 100 元、劳动力投入减 28.6%、节水 15.3%、化肥减量 23.6%。</li>
+      <li>AI 遥感验标、卫星巡田让银行/保险机构以可控成本监测每片土地状态，农业资产进入风控评估体系。</li>
+    </ul>
+    <div class="biz">明华遥感 BD 可直接对标"地块级 + 提前估产"商业模式，借海南/东南亚热带农业场景拓展政企客户（如橡胶、油棕长势与产量监测）。</div>
+  </div>
+
+  <div class="card b3">
+    <div class="ttl">中国气象局：农业生态立体观测网络赋能秋收秋种，多源协同"四情"交叉验证</div>
+    <div class="meta"><span>来源：中国气象局气象探测中心 / 今日头条</span><span>日期：2026-11-09</span></div>
+    <ul>
+      <li>探测中心农业生态立体观测网络依托土壤水分仪、物候仪、通量仪、高光谱设备，结合<b>无人机航测 + 卫星遥感</b>开展连续精细化观测。</li>
+      <li>构建农情、苗情、墒情、灾情"四情"一体化交叉验证体系：卫星提供大范围覆盖、无人机机动补盲、地基站点承担"真值"校准。</li>
+      <li>已转向秋种服务，为冬小麦适期播种提供精细化气象保障；主粮作物灾害动态监测与未来 10 天趋势预测同步推进。</li>
+    </ul>
+  </div>
+
+  <div class="card b3">
+    <div class="ttl"><span class="co planet">Planet</span>Planet AI 应用免费上线，10 年卫星影像"自然语言问答"面向农民等场景</div>
+    <div class="meta"><span>来源：Planet 官方（Will Marshall 11/5 推文）/ FourWeekMBA</span><span>日期：2026-11-05</span></div>
+    <ul>
+      <li>Planet 联合创始人兼 CEO 威尔·马歇尔宣布 <b>Planet AI</b> 正式上线，基于超过 10 年、3000+ 层的每日卫星图像存档（PlanetScope 等）。</li>
+      <li>4 个测试版应用明确列出：<b>农民提高作物产量</b>、应急人员追踪灾害路径、安保团队发现新兴风险、公园管理员制止非法砍伐。</li>
+      <li>商业模式：从纯数据 API 调取向"AI + 垂直行业软件"转型，农业是其最大商业市场之一（结合 FarmQA 合作提供企业级产量情报）。</li>
+    </ul>
+  </div>
+
+  <div class="card b3">
+    <div class="ttl"><span class="co maxar">Maxar</span>原 Maxar Intelligence 更名 Vantor，0.3m 影像持续入库 NASA 商业遥感数据集</div>
+    <div class="meta"><span>来源：美国政府开放数据平台 Data.gov（10/26 更新）/ 百度百科</span><span>日期：2026-10-26（持续）</span></div>
+    <ul>
+      <li>原 Maxar Technologies 已于 2023 年被 Advent 收购私有化，2025-10-01 业务拆分后 Maxar Intelligence 更名为 <b>Vantor Inc.</b>，运营 WorldView Legion 等高分辨率星座（最高 0.3m）。</li>
+      <li>其 WorldView/GeoEye 系列全色与多光谱影像持续更新至 NASA 商业遥感数据集（CSDA），用于城市规划、灾害响应、基础设施巡检与国防情报。</li>
+    </ul>
+    <div class="biz">⚠️ <b>合规提示</b>：Vantor（原 Maxar Intelligence）已被中方依据《反外国制裁法》列入反制清单（2025-12-26），禁止境内组织/个人与其交易合作。明华在海外遥感项目选型时<b>应规避该供应商</b>，优先评估长光、四维、Airbus、Planet 等合规数据源。</div>
+  </div>
+
+  <div class="card b3">
+    <div class="ttl"><span class="co airbus">Airbus</span>与 Kpler 达成暗船监测战略合作，卫星影像锁定规避制裁航运</div>
+    <div class="meta"><span>来源：Airbus Space Solutions 新闻室</span><span>日期：2026-10-20</span></div>
+    <ul>
+      <li>Airbus Defence and Space 与航运数据公司 Kpler 宣布战略合作协议，利用高分辨率卫星影像开展<b>暗船（dark vessel）检测</b>。</li>
+      <li>应用场景：识别关闭 AIS 信号的船只，打击非法捕捞、走私与规避制裁的航运活动，服务海事安全与碳排监测。</li>
+      <li>同期 Airbus 在 Global MilSatCom 2026（11/3）等防务会议持续展示天基能力，Pléiades Neo 0.3m 影像亦支撑欧盟精准农业与城市精细化管理。</li>
+    </ul>
+  </div>
+
+  <h2 class="s4">板块四 · 遥感技术</h2>
+  <div class="dim">▍专业术语</div>
+  <div class="terms">
+    <div class="term"><b>重访周期（Revisit Cycle）：</b>卫星多久能"再看一眼"同一块地。大白话——天上的相机绕地球转，同一个地点要隔几小时或几天才能再拍一张；间隔越短，越能盯住作物每天的长势变化。</div>
+    <div class="term"><b>正射校正（Orthorectification）：</b>把"歪着拍"的卫星图掰正。大白话——卫星斜着拍的山坡会被拉长变形，正射校正用高程（地形）数据把变形拉平，让图上量出来的距离和真实地面距离对得上。</div>
+  </div>
+
+  <div class="dim">▍前沿动态</div>
+  <div class="card b4">
+    <div class="ttl">商业航天 × 低空经济深度耦合：卫星"搭天网"、无人机"做细活"，1+1>2</div>
+    <div class="meta"><span>来源：新华财经 / 中国经济网</span><span>日期：2026-11-09</span></div>
+    <ul>
+      <li>行业共识：商业航天搭建全域覆盖、高精度的空天信息基础设施，无人机等低空飞行器面向细分场景开展精细化应用，二者协同产生"1+1>2"效应。</li>
+      <li>无人机观测数据可作为太空卫星数据的有效补充——农业场景中无人机作业越来越多地依托商业卫星提供的指引（如地块边界、宏观长势）。</li>
+      <li>叠加在轨算力与边缘智能（数据回传时延压至分钟级），"拍照片"正转向"算数据"，环境监测成为落地最扎实的场景之一。</li>
+    </ul>
+  </div>
+
+  <div class="dim">▍历史案例</div>
+  <div class="case">
+    <h3>「中国高分 / 农业专属卫星」延伸专栏（五）· 高分三号 GF-3（2016-08-10）</h3>
+    <ul>
+      <li><b>背景：</b>2016 年 8 月 10 日，高分三号在太原卫星发射中心由长征四号丙运载火箭发射升空，是国家高分辨率对地观测系统重大专项中<b>唯一一颗微波遥感卫星</b>。</li>
+      <li><b>技术突破：</b>我国<b>首颗 1 米级 C 波段多极化合成孔径雷达（SAR）</b>卫星，填补了全天时、全天候遥感监测领域空白——它主动发射微波、不依赖太阳光，<b>穿透云雾雨雪</b>也能成像；设计 12 种成像模式，分辨率 1 米至 500 米、幅宽 10–650 公里，是全球成像模式最丰富的民用 SAR 之一。</li>
+      <li><b>对农业的影响：</b>南方水稻区、华南等<b>多云多雨地区</b>长期是光学遥感的盲区，GF-3 的 SAR 能力让农情监测在阴雨季节不断档；其数据业务明确包含<b>农作物长势、洪涝淹没范围提取、耕地变化</b>等，是农业灾害（渍害、洪涝）应急监测的关键数据源。后续 GF-3 01/02/03 星组网后重访周期可缩短至 0.2 天，应急响应能力大幅提升。</li>
+    </ul>
+  </div>
+
+  <div class="next">
+    <h2>明华下一步衔接建议</h2>
+    <ol>
+      <li><b>海南农业遥感"一张图"：</b>对标海垦"土地一张图 + 胶林遥感监测"成熟模式，结合海南卫星数据与应用研究中心资源，优先在橡胶、南繁种业场景落地地块级监测方案。</li>
+      <li><b>东南亚多云区优先评估 SAR：</b>热带多雨是光学遥感硬伤，本期 GF-3 案例提示——明华拓展东南亚（越南/柬埔寨/泰国）农业遥感时，应将 SAR（如 GF-3 系列、后期合规商业 SAR）纳入数据源组合，规避受制裁的 Vantor。</li>
+      <li><b>商业火箭发射服务协同：</b>文昌火箭卫星产业园持续扩容（中飞航天小镇、快舟/九天行歌），明华与航天科工快舟合作可借产业园配套就近落地总包集成业务。</li>
+      <li><b>遥感×农业商业模式对标：</b>借鉴佳格天地"4 亿亩 + 提前 30–60 天估产 + 地块级"与长光"影像定制"思路，打磨面向政企的农业遥感 SaaS/数据服务包，作为明华遥感 BD 的拳头产品。</li>
+    </ol>
+  </div>
+
+  <footer>
+    海垦日报 · 第 101 期 · 2026-11-10（周二刊）｜监测主线：遥感 + 农业 + 海南 / 文昌 / 火箭<br>
+    关联群组：卫星主营业务调研｜出品：Harry 🎩 for 明华 · Astrolink BD<br>
+    信息来源：海南省政府网、文昌市政府网、海南农垦报、新华财经、中国经济网、长光卫星、Planet、Airbus、行业研究报告等公开渠道。以官方公告与一线 BD 核实为准，未公开信息或推测已标注。
+  </footer>
+</div>
+</body>
+</html>
