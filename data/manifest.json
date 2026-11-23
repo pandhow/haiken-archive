@@ -4,6 +4,34 @@
   "_add_issue_help": "新增一期：① 把日报HTML丢进 issues/（命名 YYYY-MM-DD.html）② 在 issues 数组顶部加一条 {date,issue_no,title,tags,file} ③ 刷新页面",
   "issues": [
     {
+      "date": "2026-11-23",
+      "issue_no": "109",
+      "title": "自贸港7项制度创新；快舟九天落子文昌；Sentinel-2十周年",
+      "tags": [
+        "海南自贸区",
+        "文昌航天城",
+        "快舟航天",
+        "长光卫星",
+        "Planet",
+        "Sentinel-2"
+      ],
+      "file": "issues/2026-11-23.html"
+    },
+    {
+      "date": "2026-11-22",
+      "issue_no": "108",
+      "title": "长八甲成功发射低轨30组；自贸港从建框架转向强功能；海垦1345+RCEP交易中心",
+      "tags": [
+        "海南自贸区",
+        "文昌航天城",
+        "长征八号甲",
+        "海垦1345",
+        "遥感农业",
+        "VIIRS"
+      ],
+      "file": "issues/2026-11-22.html"
+    },
+    {
       "date": "2026-11-19",
       "issue_no": "107",
       "title": "琼港港航备忘录；冯飞文昌调研三链；MODIS 2000",
